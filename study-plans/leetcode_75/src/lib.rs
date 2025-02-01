@@ -1,1 +1,3 @@
 pub mod p1768_merge_strings_alternately;
+
+pub mod p1071_greatest_common_divisor_of_strings;
