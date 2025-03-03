@@ -23,7 +23,8 @@ impl Solution {
             if i == 0 && i + 1 != bed_size && reference[i + 1] == 0 {
                 placed -= 1;
                 reference[i] = 1;
-            } else if i != 0 && i + 1 != bed_size && reference[i - 1] == 0 && reference[i + 1] == 0 {
+            } else if i != 0 && i + 1 != bed_size && reference[i - 1] == 0 && reference[i + 1] == 0
+            {
                 placed -= 1;
                 reference[i] = 1;
             } else if i + 1 == bed_size && reference[i] == 0 && reference[i - 1] == 0 {
@@ -44,31 +45,31 @@ mod tests {
 
     #[test]
     fn sample1() {
-        let answer = Solution::can_place_flowers([1,0,0,0,1].to_vec(), 1);
+        let answer = Solution::can_place_flowers([1, 0, 0, 0, 1].to_vec(), 1);
         assert_eq!(answer, true);
     }
 
     #[test]
     fn sample2() {
-        let answer = Solution::can_place_flowers([1,0,0,0,1].to_vec(), 2);
+        let answer = Solution::can_place_flowers([1, 0, 0, 0, 1].to_vec(), 2);
         assert_eq!(answer, false);
     }
 
     #[test]
     fn case1() {
-        let answer = Solution::can_place_flowers([0,1,0,0,1].to_vec(), 1);
+        let answer = Solution::can_place_flowers([0, 1, 0, 0, 1].to_vec(), 1);
         assert_eq!(answer, false);
     }
 
     #[test]
     fn case2() {
-        let answer = Solution::can_place_flowers([0,0,0,0,0].to_vec(), 3);
+        let answer = Solution::can_place_flowers([0, 0, 0, 0, 0].to_vec(), 3);
         assert_eq!(answer, true);
     }
 
     #[test]
     fn case3() {
-        let answer = Solution::can_place_flowers([0,0,0,0,0].to_vec(), 4);
+        let answer = Solution::can_place_flowers([0, 0, 0, 0, 0].to_vec(), 4);
         assert_eq!(answer, false);
     }
 
