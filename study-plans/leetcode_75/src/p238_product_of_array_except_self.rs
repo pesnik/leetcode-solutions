@@ -37,7 +37,7 @@ mod tests {
 
     #[test]
     fn sample2() {
-        let product = Solution::product_except_self([-1,1,0,-3,3].to_vec());
-        assert_eq!(product, [0,0,9,0,0].to_vec());
+        let product = Solution::product_except_self([-1, 1, 0, -3, 3].to_vec());
+        assert_eq!(product, [0, 0, 9, 0, 0].to_vec());
     }
 }
