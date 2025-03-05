@@ -7,3 +7,5 @@ pub mod p1431_kids_with_the_greatest_number_of_candies;
 pub mod p605_can_place_flowers;
 
 pub mod p345_reverse_vowels_of_a_string;
+
+pub mod p238_product_of_array_except_self;
