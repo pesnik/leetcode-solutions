@@ -17,3 +17,5 @@ pub mod p443_string_compression;
 pub mod p334_increasing_triplet_subsequence;
 
 pub mod p283_move_zeroes;
+
+pub mod p392_is_subsequence;
