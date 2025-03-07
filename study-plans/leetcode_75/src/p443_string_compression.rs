@@ -11,17 +11,13 @@ impl Solution {
                 store_keeper.push(chars[i]);
             } else {
                 compressed_str = match store_keeper.len() {
-                    1 => format!(
-                        "{}{}",
-                        compressed_str,
-                        store_keeper[0].to_string()
-                    ),
+                    1 => format!("{}{}", compressed_str, store_keeper[0].to_string()),
                     _ => format!(
                         "{}{}{}",
                         compressed_str,
                         store_keeper[0].to_string(),
                         store_keeper.len().to_string()
-                    )
+                    ),
                 };
                 store_keeper.clear();
                 store_keeper.push(chars[i]);
@@ -30,17 +26,13 @@ impl Solution {
 
         if !store_keeper.is_empty() {
             compressed_str = match store_keeper.len() {
-                1 => format!(
-                    "{}{}",
-                    compressed_str,
-                    store_keeper[0].to_string()
-                ),
+                1 => format!("{}{}", compressed_str, store_keeper[0].to_string()),
                 _ => format!(
                     "{}{}{}",
                     compressed_str,
                     store_keeper[0].to_string(),
                     store_keeper.len().to_string()
-                )
+                ),
             };
         }
         *chars = compressed_str.chars().collect::<Vec<char>>();
@@ -61,7 +53,9 @@ mod tests {
 
     #[test]
     fn sample3() {
-        let mut input: Vec<char> = vec!['a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'];
+        let mut input: Vec<char> = vec![
+            'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b',
+        ];
         let compressed = Solution::compress(&mut input);
         assert_eq!(compressed, 4);
     }
