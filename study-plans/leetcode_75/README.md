@@ -15,4 +15,4 @@ My first approach was to select the next bar on the following condition:
         _ => move_right
     }
 ```
-|> This algorithm makes locally optimal decisions that might miss the globally optimal solution.
+> This algorithm makes locally optimal decisions that might miss the globally optimal solution.
