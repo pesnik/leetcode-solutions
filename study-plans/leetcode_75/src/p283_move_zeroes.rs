@@ -6,7 +6,7 @@ impl Solution {
             .iter()
             .filter_map(|&num| match num {
                 0 => None,
-                _ => Some(num)
+                _ => Some(num),
             })
             .collect::<Vec<i32>>();
         let zeroes: Vec<i32> = vec![0; nums.len() - nonzeroes.len()];

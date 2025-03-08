@@ -26,13 +26,13 @@ mod tests {
 
     #[test]
     fn sample1() {
-        let max_area = Solution::max_area([1,8,6,2,5,4,8,3,7].to_vec());
+        let max_area = Solution::max_area([1, 8, 6, 2, 5, 4, 8, 3, 7].to_vec());
         assert_eq!(max_area, 49);
     }
 
     #[test]
     fn custom1() {
-        let max_area = Solution::max_area([1,3,2,5,25,24,5].to_vec());
+        let max_area = Solution::max_area([1, 3, 2, 5, 25, 24, 5].to_vec());
         assert_eq!(max_area, 24);
     }
 }

@@ -16,3 +16,6 @@ My first approach was to select the next bar on the following condition:
     }
 ```
 > This algorithm makes locally optimal decisions that might miss the globally optimal solution.
+
+## 1679. Max Number of K-Sum Pairs
+Sort + Two Pointer. Too Slow! Beats only 22% ac submissions.
