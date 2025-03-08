@@ -28,7 +28,7 @@ mod tests {
 
     #[test]
     fn sample1() {
-        let op = Solution::max_operations(vec![1,2,3,4], 5);
+        let op = Solution::max_operations(vec![1, 2, 3, 4], 5);
         assert_eq!(op, 2);
     }
 
