@@ -22,3 +22,6 @@ Sort + Two Pointer. Too Slow! Beats only 22% ac submissions.
 
 ## 643. Maximum Average Subarray I
 A simple sliding window problem, but solution isn't so idiomatic rusty.
+
+## 1456. Maximum Number of Vowels in a Substring of Given Length
+A non-optimized solution based on sliding window, redundent code and operations. Beats 37.71%!
