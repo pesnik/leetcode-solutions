@@ -4,14 +4,8 @@ impl Solution {
     pub fn max_vowels(s: String, k: i32) -> i32 {
         let k = k as usize;
         let vec: Vec<char> = s.chars().collect();
-        let is_vowel = |c: char| -> bool {
-            matches!(c, 'a' | 'e' | 'i' | 'o' | 'u')
-        };
-        let mut current_vowels = vec
-            .iter()
-            .take(k)
-            .filter(|&&ch| is_vowel(ch))
-            .count();
+        let is_vowel = |c: char| -> bool { matches!(c, 'a' | 'e' | 'i' | 'o' | 'u') };
+        let mut current_vowels = vec.iter().take(k).filter(|&&ch| is_vowel(ch)).count();
 
         let mut max_vowels = current_vowels;
 
@@ -23,7 +17,6 @@ impl Solution {
             if is_vowel(vec[i]) {
                 current_vowels += 1;
             }
-
 
             max_vowels = max_vowels.max(current_vowels);
         }

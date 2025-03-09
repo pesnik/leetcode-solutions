@@ -27,3 +27,7 @@ pub mod p1679_max_number_of_k_sum_pairs;
 pub mod p643_maximum_average_subarray_i;
 
 pub mod p1456_maximum_number_of_vowels_in_a_substring_of_given_length;
+
+pub mod p1732_find_the_highest_altitude;
+
+pub mod p724_find_pivot_index;
