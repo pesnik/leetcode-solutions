@@ -25,3 +25,9 @@ A simple sliding window problem, but solution isn't so idiomatic rusty.
 
 ## 1456. Maximum Number of Vowels in a Substring of Given Length
 A non-optimized solution based on sliding window, redundent code and operations. Beats 37.71%!
+
+## 1732. Find the Highest Altitude
+A very basic problem for prefix sum.
+
+## 724. Find Pivot Index
+Another easy prefix sum, but learnt about `scan()` iterator.
