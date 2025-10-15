@@ -1,3 +1,5 @@
+pub mod p1004_max_consecutive_ones_iii;
+
 pub mod p1768_merge_strings_alternately;
 
 pub mod p1071_greatest_common_divisor_of_strings;
@@ -31,3 +33,5 @@ pub mod p1456_maximum_number_of_vowels_in_a_substring_of_given_length;
 pub mod p1732_find_the_highest_altitude;
 
 pub mod p724_find_pivot_index;
+
+pub mod p2215_find_the_difference_of_two_arrays;
